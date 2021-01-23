@@ -1,7 +1,7 @@
 export const home = (req, res) => res.render(`home`, {pageTitle : 'Home'});
 
 export const search = (req, res) => {
-    const {query: {term : searchingBy}} = req;
+    const searchingBy = req.query.term;
     res.render(`search`, { searchingBy : searchingBy});
 }
 
