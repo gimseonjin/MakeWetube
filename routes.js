@@ -1,4 +1,3 @@
-const { default: userRouter } = require("./routers/userRouter");
 
 // Global
 const HOME = "/";
